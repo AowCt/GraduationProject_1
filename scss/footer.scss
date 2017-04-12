@@ -1,0 +1,105 @@
+@charset "utf-8";
+@import "base";
+$bgColor: #b01330;
+
+.foot_top{
+    height: 60px;
+    background: $bgColor;
+    a{
+        width: 240px;
+        text-align: center;
+        height: 60px;
+        line-height: 60px;
+        color: #fff!important;
+        font-size: 14px;
+        float: left;
+        span{
+            width: 34px;
+            height: 34px;
+            display: inline-block;
+            vertical-align: middle;
+            margin-right: 8px;
+            background: url(../img/styleImg/bases.png);
+        }
+    }
+    a:nth-child(1) span{
+        background-position: -53px -25px;
+    }
+    a:nth-child(2) span{
+        background-position: -88px -25px;
+    }
+    a:nth-child(3) span{
+        background-position: -159px -25px;
+    }
+    a:nth-child(4) span{
+        background-position: -124px -25px;
+    }
+    a:nth-child(5) span{
+        background-position: -196px -25px;
+    }
+}
+.foot_mid{
+    height: 161px;
+    background: #444;
+    border-bottom: 1px solid #555;
+    .ft_mid_ul{
+        border-right: 1px solid #555;
+        width: 170px;
+        height: 116px;
+        text-align: center;
+        margin-top: 30px;
+        margin-bottom: 15px;
+        float: left;
+        p{
+            font-weight: bold;
+            color: #dbdbdb;
+            font-size: 14px;
+        }
+        ul li{
+            margin-top: 5px;
+            margin-bottom: 5px;
+            a{
+                color: #999;
+                &:hover{
+                    color: $bgColor;
+                }
+            }
+        }
+    }
+}
+.foot_root{
+    text-align: center;
+    padding-bottom: 10px;
+    background: #444;
+    ul{
+        width: 280px;
+        margin: 0 auto;
+        padding: 10px 0px;
+        overflow: hidden;
+        li{
+            float: left;
+            a{
+                border-right: 1px solid #555;
+                padding: 0px 10px;
+                color: #999;
+                height: 14px;
+                line-height: 14px;
+                &:hover{
+                    color: $bgColor;
+                }
+            }
+        }
+    }
+    div a{
+        display: inline-block;
+        img{
+            width: 137px;
+            height: 40px;
+//          margin: 1px 10px;
+            border-radius: 13%;
+            
+        }
+    }
+}
+
+

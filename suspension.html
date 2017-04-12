@@ -1,0 +1,22 @@
+<div class="suspension">
+<a href="javascript:;" class="both_hidd suspen_cart">
+	<div class="cart fixed"></div>
+	<div class="move nav_1">购物车</div>
+</a>
+<a href="javascript:;" class="both_hidd suspen_retren">
+	<div class="return fixed"></div>
+	<div class="move nav_2">返回顶部</div>
+</a>
+
+</div>
+<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+<script type="text/javascript">
+	$(function(){
+	 	$('.suspen_retren').click(function(){
+		$('body').animate({
+	 			scrollTop:0
+	 		},2000);
+	 	});
+	 
+	});
+</script>

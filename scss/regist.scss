@@ -1,0 +1,59 @@
+@charset "utf-8";
+@import "base";
+//手机验证与验证码验证
+.code_total{
+    margin: 10px 22px 0 22px;
+    position: relative; 
+    height: 42px;
+    //文本输入框
+    .input_size{
+        display: block;
+        width: 231px;
+        height: 40px;
+        border: 1px solid #FFFFFF;
+        background: #f9f9f9;
+        padding: 0 20px 0 43px;
+        line-height: 40px;
+        float: left;
+        font-size: 13px;
+        color: #666;
+    }
+    //验证码验证 
+    .random_icon{
+        background: url("../img/styleImg/login_icon.png") no-repeat 14px -399px;
+    }
+    //手机验证
+    .code_icon{
+        background: url("../img/styleImg/login_icon.png") no-repeat 14px -293px;
+    }
+    //手机验证点击
+    #btn_getcode {
+        padding: 12px 22px;
+        border: none;
+        background-color: #b01330;
+        color: #ffffff;
+        cursor: pointer;
+        float: right;
+    }
+}
+//单选框
+.deal {
+    margin: 10px 30px 10px 30px;
+    line-height: 12px;
+}
+//注册按钮
+#btnLogin{
+    display: block;
+    width: 295px;
+    background: #b01330;
+    border: none;
+    cursor: pointer;
+    margin: 0 22px 0 22px;
+    text-align: center;
+    span{
+        color: #FFF;
+        line-height: 36px;
+        font-size: 20px;
+    }
+}
+

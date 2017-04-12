@@ -1,0 +1,253 @@
+@charset "utf-8";
+@import "base";
+$bgColor:#b01330;
+.regtop{
+    padding: 20px 0px;
+    background: #f2f2f2;
+    //logo
+    .reglogo{
+        float: left;
+    }
+    //登录文字
+    .login{
+        float: left;
+        width: 140px;
+        height: 53px;
+        padding-left: 30px;
+        margin-top: 10px;
+        margin-left: 35px;
+        font-size: 28px;
+        line-height: 50px;
+        color: #333333;
+        border-left: 1px solid #dbdbdb;
+    }
+}
+
+
+
+//中部
+#login_middle{
+    width: 100%;
+    background-color: #001029;
+    overflow: hidden;
+    height: 480px;
+    border-bottom: 1px solid #dbdbdb;
+    background: url("../img/styleImg/u=3213564594,2260758653&fm=23&gp=0.png") center center;
+    .login_right{
+        padding: 46px 0;
+         background: url("../img/styleImg/loginBg.png") no-repeat center center;
+        position: relative;
+        //第三方登录
+        .thirdland{
+            width: 300px;
+            position: absolute;
+            left: 275px;
+            top: 70px;
+            p{
+                font-size: 14px;
+                line-height: 20px;
+                color: #000;
+            }
+            ul{
+                    margin-top: 38px;
+                li{
+                    float: left;
+                    width: 64px;
+                    text-align: center;
+                    margin-right: 30px;
+                    i{
+                        display: block;
+                        width: 64px;
+                        height: 64px;
+                        background: url(../img/styleImg/login_icon_re.png) no-repeat;
+                    }
+                    &:nth-child(1) i{
+                        background-position: 0 0;
+                    }
+                    &:nth-child(2) i{
+                        background-position: -64px 0;
+                    }
+                    &:nth-child(3) i{
+                        background-position: -129px 0;
+                    }
+                    span{
+                        display: block;
+                        font-size: 14px;
+                        line-height: 20px;
+                        color: #000;
+                        margin-top: 10px;
+                    }
+                }
+            }
+        }
+        
+        
+        //登录
+        .login_login{
+            margin-right: 250px;
+            width: 340px;
+            height: 390px;
+//          background: #ffffff;
+        /*  padding: 25px 21px 18px 23px;*/
+//          border: 1px solid #dbdbdb;
+            float: right;
+            //头文字
+            .login_above{
+                margin: 25px 22px 5px 22px;
+                background: #FFFFFF;
+                span{
+                    font-size: 18px;
+                    color: #686565;
+                    font-weight: 700;
+                }
+                b{
+                    color: #999999;
+                    font-size: 12px;
+                    font-weight: normal;
+                    float: right;
+                    a{
+                        padding-left: 8px;
+                        color: #137ce9;
+                    }
+                }
+            }
+        }
+    }
+}
+//验证
+
+.login_error_section {
+    height: 22px;
+    line-height: 22px;
+    .error_tips {
+        margin: 0 22px 0 22px;
+        color: #b01330;
+        line-height: 12px;
+        display: none;
+        i {
+            width: 22px;
+            height: 20px;
+            display: inline-block;
+            background: url("../img/styleImg/login_icon.png") no-repeat;
+            background-position: 0px -240px;
+            position: relative;
+            top: 2px;
+            left: 0;
+        }
+        
+    }
+}
+//用户名验证
+.login_account_total {
+    margin: 10px 22px 0 22px;
+    position: relative;
+    height: 42px;
+    
+    //input输入框
+    .input_size{
+        display: block;
+        width: 231px;
+        height: 40px;
+        border: 1px solid #FFFFFF;
+        background: #f9f9f9;
+        padding: 0 20px 0 43px;
+        line-height: 40px;
+        float: left;
+        font-size: 13px;
+        color: #666;
+    }
+}
+.input_icon{
+    padding: 8px 20px;
+    height: 22px;
+    font-size: 14px;
+    font-weight: 400;
+    display: inline-block;
+    line-height: 1;
+    color: #555;
+    text-align: center;
+    background-color: #f9f9f9;
+    white-space: nowrap;
+    vertical-align: middle;
+    float: left;
+    position: absolute;
+    left: 2px;
+    top: 2px;
+}
+//用户名小图标
+.user_icon{
+    background: url("../img/styleImg/login_icon.png") no-repeat 14px -113px;
+}
+//密码小图标
+.passw_icon{
+    background: url("../img/styleImg/login_icon.png") no-repeat 14px -169px;
+}
+//滑动验证
+.Sash_box{
+    float: left;
+    width: 288px;
+    position: relative;
+    .Slider_tip{
+        position: absolute;
+        top: 0;
+        left: 95px;
+        font-size: 14px;
+        color: #FFFFFF;
+        line-height: 40px;
+    }
+    //滑动
+    .bgSlider {
+        width: 291px;
+        height: 34px;
+        float: left;
+        background-color: #f55674;
+        padding: 3px;
+        .Slider {
+            width: 52px;
+            height: 34px;
+            background: transparent url(../img/styleImg/bg_draggable_qaptcha_1.png) no-repeat;
+            cursor: pointer;
+            position: absolute;
+        }
+    }
+}
+.scuess {
+    background: url(../img/styleImg/bg_draggable_qaptcha_1.png);
+}
+
+//选择框
+.login_checkbox_all {
+    margin: 10px 24px 10px 24px;
+    line-height: 22px;
+    height: 22px;
+    color: #777777;
+}
+//登录
+#btnLogin{
+    display: block;
+    width: 295px;
+    background: $bgColor;
+    border: none;
+    cursor: pointer;
+    margin: 0 22px 0 22px;
+    span{
+        color: #FFF;
+        line-height: 36px;
+        font-size: 20px;
+    }
+}
+//合作伙伴
+.login_relat{
+    margin-top: 98px;
+    margin: 15px 22px 15px 22px;
+    font-style: normal;
+    color: #777777;
+    a{
+        display: block;
+        float: left;
+        margin-left: 10px;
+        line-height: 30px;
+        color: #137ce9;
+    }
+}
+

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>会员注册</title>
+		<link href="img/icon.ico" type="image/x-icon" rel="icon">
+		<link rel="stylesheet" href="css/login.css" />
+		<link rel="stylesheet" href="css/regist.css" />
+		<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+		<script type="text/javascript" src="js/regist.js"></script>
+		
+	</head>
+	<body>
+		
+	<!-- 注册页面头部 -->
+		<div class="regtop">
+			<div class="f1" style="overflow: hidden;">
+				<div class="reglogo">
+					<a href="index.html" target="_blank">
+						<img src="img/styleImg/logo01.png" alt="" />
+					</a>
+				</div>
+				<div class="login">欢迎注册</div>
+			</div>
+		</div>
+		<!-- 登陆页面中部 -->
+		<div id="login_middle">
+			<div class="login_right  pub_width both_hidd">
+				
+				<!--  其他登录方式  -->
+				<div class="thirdland">
+					<p>其他账户登录</p>
+					<ul>
+						<li>
+							<a href="javascript:;">
+								<i></i>
+								<span>QQ</span>
+							</a>
+						</li>
+						<li>
+							<a href="javascript:;">
+								<i></i>
+								<span>新浪微博</span>
+							</a>
+						</li>
+						<li>
+							<a href="javascript:;">
+								<i></i>
+								<span>微信</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+				
+				<!-- 登录  -->
+				<form class="login_login">
+					<div class="login_above">
+						<span>用户注册</span>
+						<b>已有账户?<a href="login.html">立即登录</a></b>
+					</div>
+				    <div id="RegisterForm">
+				    	<div class="login_error_section">
+				    		<div class="error_tips">
+				    			<i></i>
+				    			<span></span>
+				    		</div>
+				    	</div>
+				    	<div class="login_account_total">
+				    		<div class="input_icon user_icon"></div>
+				    		<input id="account" class="input_size" type="text" name="" value="" name="username" placeholder="邮箱、手机号"/>
+				    	</div>
+				    	<div class="login_account_total">
+				    		<div class="input_icon passw_icon"></div>
+				    		<input id="password" class="input_size" type="password" name="" value="" name="password" placeholder="6-16位字符，必须包含英文字母和数字" maxlength="16"/>
+				    	</div>
+				    	<div class="code_total"  id="code_total">
+				    		<div class="input_icon random_icon"></div>
+				    		<input type="text" class="input_size" name="" id="yzm" maxlength="4" placeholder="输入验证码" style="width: 112px;"/>
+				    		<img src="img/styleImg/0.html.png" alt="" style="vertical-align: middle;cursor: pointer;margin-left: 15px;float: right;"/>
+				    	</div>
+				    	<div class="code_total">
+				    		<div class="input_icon code_icon"></div>
+				    		<input type="text" class="input_size" name="ver_code" id="ver_code" maxlength="6" placeholder="输入手机验证码" style="width: 112px;"/>
+				    		<input type="button" id="btn_getcode" value="获取验证码" onclick=""/>
+				    	</div>
+				    	<div class="deal">
+				    		<input class="deal_agree" type="checkbox" checked=""/>我已同意并阅读
+				    		<a href="javascript:;" style="color: #137ce9;">&lt;表佰商城用户协议&gt;</a>
+				    	</div>
+				    	<a id="btnLogin" name="btnLogin">
+				    		<span>注册</span>
+				    	</a>
+				    </div>
+				</div>
+				
+			</div>
+		</div>
+	</body>
+</html>
+

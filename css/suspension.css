@@ -1,0 +1,48 @@
+@charset "UTF-8";
+/*侧悬浮*/
+.suspension {
+  position: fixed;
+  right: 0;
+  bottom: 60px;
+  height: 200px;
+  width: 45px;
+  font-size: 14px;
+  z-index: 10000; }
+  .suspension a {
+    width: 200px;
+    display: block;
+    height: 32px;
+    position: absolute;
+    padding-left: 12px;
+    background: #b01330;
+    margin-bottom: 2px; }
+  .suspension .suspen_cart {
+    bottom: 50px; }
+  .suspension .fixed {
+    width: 45px;
+    height: 32px;
+    float: left;
+    z-index: 3; }
+  .suspension .cart {
+    background: url("../img/styleImg/index.png") no-repeat 0px -51px; }
+  .suspension .move {
+    float: left;
+    width: 90px;
+    height: 32px;
+    line-height: 32px;
+    background: #b01330;
+    text-align: center;
+    font-size: 18px;
+    color: #fff;
+    transition: transform .55s;
+    transform: translate3d(0, 0, 0); }
+  .suspension .return {
+    background: url("../img/styleImg/index.png") no-repeat 0px -671px; }
+  .suspension .suspen_cart:hover .nav_1 {
+    transform: translate3d(-140px, 0, 0); }
+  .suspension .suspen_retren:hover .nav_2 {
+    transform: translate3d(-140px, 0, 0); }
+  .suspension .suspen_retren {
+    bottom: 0; }
+
+/*# sourceMappingURL=suspension.css.map */

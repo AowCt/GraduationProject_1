@@ -1,0 +1,474 @@
+@charset "utf-8";
+@import "base";
+$bgColor: #b01330;
+$background: #666;
+.dispBlock{
+    display: block;
+}
+.top_nav {
+    background-color: $background;
+    padding: 2px 0;
+    color: #EDEDED;
+    a{
+        color: #1153E0;
+    }
+    .nav_left{
+         p:nth-child(2){
+            display: none;
+        }
+    }
+}
+.head .top_nav p a{
+    color: #E67D1F;
+    &:hover{
+        color: #EDEDED;
+    }
+}
+.head .top_nav .div_box{
+    float: left;
+    min-width: 80px;
+    text-align: center;
+    position: relative;
+    z-index: 10000;
+    a{
+        color: #EDEDED;
+        span{
+            width: 7px;
+            height: 6px;
+            display: inline-block;
+            margin-left: 6px;
+            margin-top: -10px;
+            background: url("../img/styleImg/index.png") no-repeat;
+            background-position: -14px 0;
+        }
+    }
+    &:hover span {
+        background-position: 0 -6px;
+    }
+}
+.bb_bb{
+    position: absolute;
+    top: 25px;
+    background-color: $background;
+    z-index: 2;
+    width: 80px;
+    border-right: 1px solid $background;
+    border-bottom: 1px solid $background;
+    border-left: 1px solid $background;
+    display: none;
+    left: 0px;
+    li{
+        width: 80px;
+        padding: 5px 0px;
+        &:hover{
+            background: #333;
+        }
+    }
+} 
+.sjd_sjd{
+    position: absolute;
+    background-color: $background;
+    padding: 10px;
+    display: none;
+    border: 1px solid $background;
+    z-index: 0;
+    left: -32px;
+    top: 24px;
+    li{
+        margin: 5px 0px;
+        text-align: center;
+        padding: 2px;
+        a{
+            display: inline-block;
+            width: 120px;
+            height: 120px;
+        }
+    }
+}
+.hm_hm{
+    position: absolute;
+    right: 0px;
+    top: 24px;
+    background-color: $background;
+    z-index: 2;
+    width: 110px;
+    display: none;
+    border: 1px solid $background;
+    li{
+        padding: 5px 0px;
+        text-align: center;
+        &:hover{
+            background: #333;
+        }
+    }
+}
+#sp:hover .bb_bb{
+    @extend .dispBlock;
+}
+#sjd:hover .sjd_sjd{
+    @extend .dispBlock;
+}
+#hm:hover .hm_hm{
+    @extend .dispBlock;
+}
+//top的中间
+.top_mid{
+    padding: 35px 0 18px;
+    background-color: white;
+}
+.logo{
+    width: 207px;
+    height: 56px;
+}
+.head .top_mid .search {
+    float: left;
+    margin: 0px 130px 0px 50px;
+    width: 580px;
+    position: relative;
+    z-index: 9000;
+}
+.head .top_mid .search .search_icon {
+    float: left;
+    height: 40px;
+    width: 31px;
+    background: url("../img/styleImg/index.png") no-repeat 7px -10px $bgColor;
+}
+.head .top_mid .search_inp{
+    border: 4px solid $bgColor;
+    height: 30px;
+    width: 414px;
+    font-size: 14px;
+    line-height: 30px;
+    font-weight: bold;
+    padding: 1px 14px;
+    outline: medium;
+}
+.head .top_mid .search .search_ss {
+    position: absolute;
+    width: 445px;
+    top: 40px;
+    left: 35px;
+    background-color: #FFF;
+}
+ .head .top_mid .search .search_ss .big_layout{
+    display: none;
+    background-color: #FFFFFF;
+    border: 1px solid #BCBCBC;
+    z-index: 100;
+    max-height: 220px;
+    overflow-x: hidden;
+    overflow-y: auto;
+ }
+.head .top_mid .search #search_btn{
+    background-color: $bgColor;
+    font-size: 16px;
+    color: #FFF;
+    border: 0;
+    height: 40px;
+    width: 99px;
+    line-height: 32px;
+    cursor: pointer;
+    position: absolute;
+    left: 480px;
+    top: 0;
+    text-align: center;
+}
+.head .top_mid .search .hot_search {
+    margin-top: 6px;
+    height: 24px;
+    width: 580px;
+    overflow: hidden;
+    white-space: nowrap;
+    li{
+        float: left;
+        margin: 0px 10px;
+        display: inline;
+        a{
+            color: #686565;
+            &:hover{
+                color: $bgColor;
+            }
+        }
+    }
+}
+//购物车按钮
+.head .top_mid .car_box_small{
+    float: left;
+    font-size: 14px;
+    color: #FFF;
+    background-color: $bgColor;
+    max-width: 145px;
+    position: relative;
+    z-index: 9000;
+}
+.head .top_mid .car_box_small .car_small{
+    display: block;
+    height: 34px;
+    border: 3px solid $bgColor;
+    overflow: hidden;
+}
+.car_small b{
+    float: left;
+    display: block;
+    height: 24px;
+    width: 24px;
+    margin: 4px 16px 0 6px;
+    background: url("../img/styleImg/index.png") no-repeat 0px -51px;
+}
+.car_small span{
+    color: #FFF;
+    font-size: 14px;
+    line-height: 32px;
+    width: 3em;
+    float: left;
+}
+.car_small .tar_left{
+    float: left;
+    width: 0;
+    height: 0;
+    border-top: 4px solid transparent;
+    border-right: 6px solid #FFF;
+    border-bottom: 4px solid transparent;
+    display: inline;
+    margin-left: 9px;
+    position: relative;
+    top: 12px;
+}
+.car_small .car_no{
+    float: left;
+    display: block;
+    background: #FFF;
+    color: $bgColor;
+    padding: 6px;
+    font-size: 12px;
+    line-height: 21px;
+    font-style: normal;
+    text-align: center;
+    min-width: 24px;
+    font-weight: inherit;
+}
+
+/*!
+ * 头部的底部
+ */
+.top_bot{
+    height: 38px;
+    border-bottom: 2px solid $bgColor;
+    background: #fff;
+    .head_left{
+        width: 210px;
+        height: 38px;
+        line-height: 38px;
+        font-size: 14px;
+        background-color: $bgColor;
+        position: relative;
+        .bot_top{
+            a{
+                color: #fff;
+                padding-left: 90px;
+                height: 25px;
+                margin-top: 10px;
+                width: 60px;
+                background: url(../img/styleImg/index.png) no-repeat 64px -116px;
+            }
+        }
+        .bot_low{
+            position: absolute;
+            height: 435px;
+//          display: none;
+            width: 208px;
+            top: 38px;
+            border-left: 2px solid $bgColor;
+            z-index: 99999;
+            padding-top: 2px;
+            &:last-child{
+                border-bottom-color: $bgColor;
+            }
+            dl{
+                    padding: 22px 0 22px 10px;
+                    overflow: hidden;
+                    border-bottom: 2px solid #dd1036;
+                    background: $bgColor;
+                    
+                    &.active{
+                        background: #fff;
+                    }
+                    dt{
+                        float: left;
+                        width: 100%;
+                        height: 21px;
+                        line-height: 21px;
+                        font-size: 14px;
+                        a{
+                            color: #fff;
+                        }
+                        
+                    }
+                    dd{
+                         float: left;
+                         width: 100%;
+                         a{
+                            color: #ccc;
+                            font-size: 12px;
+                            padding: 3px 0 0 10px;
+                            float: left;
+                            overflow: hidden;
+                         }
+                    }
+                    .dd_one{
+                            overflow: hidden;
+                            height: 20px;
+                            line-height: 20px;
+                            a{
+                                color: #ccc;
+                                font-size: 12px;
+                                padding: 3px 0 0 10px;
+                                float: left;
+                                overflow: hidden;
+                                &:hover{
+                                    text-decoration: underline;
+                                }
+                            }
+                    }
+                    .dd_two{
+                        width: 780px;
+                        height: 433px;
+                        border-left: 0;
+                        background-color: #fff;
+                        position: absolute;
+                        top: 2px;
+                        left: 208px;
+                        display: none;
+
+                        border:{
+                            right:2px solid $bgColor;
+                            bottom: 2px solid $bgColor;
+                        }
+                        .col{
+                            border-bottom: 1px solid #eee;
+                            overflow: hidden;
+                            width: 688px;
+                            margin: 0 auto;
+                            padding: 20px 0;
+                            a{
+                                color: #999;
+                            }
+                            a span{
+                                padding: 0 15px;
+                                display: inline-block;
+                            }
+                            .bar-list, .arc-list, .pro-list{
+                                overflow: hidden;
+                                padding-left: 2px;
+                            }
+                            .t{
+                                    color: #99857a;
+                                    margin-top: 8px;
+                                    margin-right: 15px;
+                                    float: left;
+                                    line-height: 15px;
+                                    font-size: 12px;
+                            }
+                            .bar-list a{
+                                width: 25%;
+                                padding: 15px 0;
+                                text-align: center;
+                                line-height: 0px;
+                                img{
+                                    width: 100px;
+                                     height: 40px;
+                                }
+                                P{
+                                    margin-top: 5px;
+                                    color: #999;
+                                    height: 18px;
+                                    line-height: 18px;
+                                }
+                            }
+                            .arc-list a{
+                                lor: #666;
+                                line-height: 30px;
+                                font-size: 12px;
+                                padding: 0;
+                                white-space: nowrap;
+                                overflow: hidden;
+                                text-overflow: ellipsis;
+                                display: block;
+                            }
+                            .pro-list a{
+                                color: #666;
+                                line-height: 30px;
+                                font-size: 12px;
+                                padding: 0;
+                                white-space: nowrap;
+                                overflow: hidden;
+                                text-overflow: ellipsis;
+                                display: block;
+                            }
+                        }
+                        .col-1{
+                            padding: 15px 0;
+                            .t{
+                                margin-top: 50px;
+                            }
+                            .bar-list a:hover p{
+                                color: #000;
+                            }
+                        }
+                        .col-3{
+                              border-bottom: 0;
+                              .pro-list a:hover{
+                                  color: #000000;
+                                 text-decoration: underline;
+                              }
+                        }
+                        .col-2 .arc-list a:hover{
+                            color: #000000;
+                            text-decoration: underline;
+                        }
+                      
+                    }
+            }
+        }
+    }
+    .head_right{
+        width: 986px;
+        ul{
+            padding-left: 15px;
+            li{
+                float: left;
+                height: 38px;
+                line-height: 38px;
+                text-align: center;
+                a{
+                    color: #333333;
+                    display: block;
+                    font-size: 15px;
+                    font-weight: bold;
+                    height: 38px;
+                    line-height: 38px;
+                    text-decoration: none;
+                    padding: 0px 30px;
+                    position: relative;
+                    &:hover{
+                        color: $bgColor;
+                    }
+                    @keyframes yh{
+                        0%{top:0;}
+                        50%{top:1px;}
+                        100%{top:2px;}
+                    }
+                    img{
+                        position: absolute;
+                        top: 4px;
+                        left: 90px;
+                        transform: translate(0,0);
+                        -webkit-transform: translate(0,0);
+                        -webkit-animation: yh .4s infinite ease;
+                        animation: yh .4s infinite ease;
+                    }
+                }
+            }
+        }
+    }
+}

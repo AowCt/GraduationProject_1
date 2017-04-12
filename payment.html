@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>支付中心</title>
+	<link href="img/icon.ico" type="image/x-icon" rel="icon">
+	<link rel="stylesheet" type="text/css" href="css/cart.css"/>
+	<link rel="stylesheet" href="css/payment.css" />
+	<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+	<script type="text/javascript" src="js/cookie.js"></script>
+	<script type="text/javascript" src="js/payment.js"></script>
+</head>
+<body>
+	
+	<div class="top">
+		<div class="pub_width">
+			<div style="float: left;" class="login_boxs">
+				Hi
+				<a href="javascript:;">1111111111</a>
+				欢迎来到表佰商城！[
+				<a href="index.html"> 退出 </a>]&nbsp;&nbsp;&nbsp;未读消息 [
+				<a href="javascript:;"> 1 </a>]
+			</div>
+			<div style="float: right;">
+				<div class="li_box myBiaobai">
+					<div class="top_nav_menu">
+						<a href="index.html" target="_blank">
+							我的表佰
+							<span></span>
+						</a>
+					</div>
+					<div class="user_con">
+						<ul>
+							<li><a href="javascript:;">我的优惠券</a></li>
+							<li><a href="javascript:;">我的收藏</a></li>
+							<li><a href="javascript:;">我的积分</a></li>
+							<li><a href="javascript:;">现金账户</a></li>
+							<li><a href="javascript:;">待评价</a></li>
+						</ul>
+					</div>
+				</div>
+				<div  class="li_box app_biaobai">
+					<div class="top_nav_menu">
+						<a href="javascript:;" target="_blank">
+							手机端
+							<span></span>
+						</a>
+					</div>
+					<div class="app_con">
+						<ul>
+							<li><img src="" alt="" /></li>
+							<li><img src="" alt="" /></li>
+						</ul>
+					</div>
+				</div>
+				<div  class="li_box serv_biaobai">
+					<div class="top_nav_menu">
+						<a href="javascript:;" target="_blank">
+							客户服务
+							<span></span>
+						</a>
+					</div>
+					<div class="service_con">
+						<ul>
+							<li><a href="javascript:;">在线服务</a></li>
+							<li><a href="javascript:;">帮助中心</a></li>
+							<li><a href="javascript:;">000-000-0000</a></li>
+						</ul>
+					</div>
+				</div>
+				<div  class="li_box">
+					<div class="top_nav_menu daohang" style="border: none;">
+						<a href="javascript:;">网站导航</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="cart_midlle both_hidd">
+		<div class="pub_width">
+			<div style="float: left;">
+				<a href="index.html">
+					<img src="img/styleImg/logo01.png" alt="" />
+				</a>
+			</div>
+			<div style="float: right;margin-top: 20px; ">
+				<ul>
+					<li>
+						<span>1.我的购物车</span>
+						<i style="background-position: -161px -759px;"></i>
+					</li>
+					<li class="current">
+						<span>2.确认订单信息</span>
+						<i></i>
+					</li>
+					<li>
+						<span>3.成功提交订单</span>
+						<i class="last"></i>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<!--订单-->
+	<div class="cart_centre both_hidd pub_width">
+		<div class="cart_paget">
+			<i class="st_1"></i>
+			<h2 style="float: left;font-size: 16px;font-weight: normal;">确认订单信息</h2>
+		</div>
+		
+		<!-- 填写并核对信息 -->
+		<div class="cart_fbox both_hidd">
+			<!-- 核对信息 -->
+			<div class="cart_d_fboxt ">
+            	<div class="cart_d_fname" style="color: #666;"> 填写并核对订单信息 </div>
+        	</div>
+        	<div class="cart_d_cfbox"> 
+        		<div class="cart_d_midfication">
+        		 	 <span class="cart_d_cft">收货地址</span> 
+        		 	 <a href="#" class="a_blue" id="chinfo">[修改]</a> 
+        		</div>
+           		<div class="cart_d_cfinfo">
+                	<div id="address_box">
+                    	<div class="bottom_rec_goodbox" style="height: 150px;padding: 0">
+	                        <div class="bottom_rec_addressList" style="margin:0">
+	                            <div class="bottom_rec_goodpos">
+	                                <ul>
+	                                 <li class="no_address" area_id="0" consignee_id="0">
+	                                            <div class="add_address"></div>
+	                                        </li></ul>
+	                            </div>
+	                        </div>
+	                        <!-- 前箭头 -->
+	                        <div class="bottom_rec_pre" id="address_div_pre"></div>
+	                        <!-- 后箭头 -->
+	                        <div class="bottom_rec_next" id="address_div_next"></div>
+	                    </div>
+	                </div>
+	            </div> 
+	            <!--修改框-->
+	            <div class="cart_d_fixbox both_hidd">
+	                <div class="cart_address_mess"> 
+	                	<span>收货人信息</span>
+	                 </div>
+	                <div class="cart_d_fixinfo">
+	                	<div style="cursor: pointer;margin: 10px 0;">
+	                        <label>
+	                            <input type="radio" name="RadioGroup1" value="单选" id="RadioGroup1_2" onclick="SelectUserAddress(this);">
+	                            <span class="fl">使用新地址</span>
+	                            <div class="clear"></div>
+	                        </label>
+	                    </div>
+	                </div>
+	                <!-- 收件人信息 -->
+	                <div class="cart_d_svinfo both_hidd" id="cart_d_svinfo">
+	                    <ul>
+	                        <li>
+	                            <label class="cart_d_cflabel ellipsis" for="txtUserName">
+	                            	<span class="redbold" >*</span>
+	                            	收货人姓名： 
+
+	                            </label>
+	                            <input type="text" class="fl" id="txtUserName" maxlength="20">
+	                            <div class="clear"></div>
+	                        </li>
+	                       <li class="li_prov_city_area">
+                            	<label class="cart_d_cflabel ellipsis" for="cmbProvince"> 
+                            		<span class="redbold" style="margin-right: 5px;">*</span>
+                            		省&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;份：
+                            	</label>
+                            	<select name="provience" id="cmbProvince" style="width: 120px;">
+                            		<option value="">请选择</option>
+                            		<option value="110000">北京市</option>
+                            		<option value="120000">天津市</option>
+                            		<option value="130000">河北省</option>
+                            	</select>
+                            	<select name="city" id="cmbCity" style="width: 160px;">
+                            		<option value="">地级市</option>
+                            	</select>
+                           	 	<select name="area" id="cmbArea" style="width: 160px;">
+                            		<option value="">市、县、区</option>
+                            	</select>
+                        	</li>
+                        	<li>
+	                            <label class="cart_d_cflabel ellipsis" for="txtAddressInfo">
+	                                <span class="redbold" style="margin-right: 5px;">*</span>详细地址： 
+	                            </label>
+	                            <div class="fl">
+	                                <input type="text" id="txtAddressInfo" class="address" maxlength="100">
+	                            </div>
+	                        </li>
+	                        <li>
+	                            <label class="cart_d_cflabel ellipsis" for="txtZipCode"> 邮&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;编： </label>
+	                            <input type="text" class="fl" id="txtZipCode" maxlength="10">
+	                        </li>
+	                        <li>
+	                            <label class="cart_d_cflabel ellipsis" for="txtMobile"> 手机号： </label>
+	                            <input type="text" class="fl" id="txtMobile" maxlength="11">
+	                            <div class="mrg"> 
+	                            	<span class="redbold" style="margin-right: 5px;">*</span>手机号或固定电话必填一个
+	                            </div>
+	                        </li>
+	                        <li>
+	                            <label class="cart_d_cflabel ellipsis" for="txtTel"> 固定电话： </label>
+	                            <input type="text" class="fl" id="txtTel" maxlength="20">
+	                        </li>
+	                        <li>
+	                            <label class="cart_d_cflabel ellipsis" for="txtEmail"> 电子邮箱： </label>
+	                            <input type="text" class="fl" id="txtEmail" maxlength="100">
+	                        </li>
+	                    </ul>
+	                </div>			
+					<!-- 保存收货人信息按钮 -->
+	                <a href="#" class="btn cart_d_svinfobtn uadd fl" id="btnSaveUserAddress">保存收货人信息</a>
+	            </div>
+            </div>
+		</div>
+		<!-- 发票 -->
+		<div class="cart_bill">
+			<div class="bill_word"><span>发票信息</span></div>
+			<div class="bill_details">
+				<div class="bill_select both_hidd">
+					<span class="pay_way fl on">
+						不需要发票
+						<i></i>
+					</span>
+					<span class="pay_way fl">
+						电子发票
+						<i></i>
+					</span>
+					<label for="txtInvoice"> 发票抬头： </label>
+					<input type="text" id="txtInvoice" placeholder="个人">
+				</div>
+				<div class="bill_explain both_hidd">
+					<span style="color:#b01330;">推进发票无纸化，低碳环保，节约资源。</span>
+					电子发票是经过国家税务局机关认可的有效凭证，符合国家税务总局统一标准，可作为财务报销凭证。
+                    <br>
+                     温馨提示：保税区及海外直邮商品下单属于境外购买行为，因此无法为您开具发票。
+                
+				</div>
+			</div>
+		</div>
+		<!-- 商品清单 -->
+		<div class="both_hidd">
+			<div class="shop_det_word">
+				<span class="cart_d_cft">商品清单</span>
+				<a href="cart.html" class="a_blue fr" style="margin-right: 35px;">返回购物车修改商品</a>
+			</div>
+			<div class="shop_det_list"> 
+				<div class="det_list_store">
+					<span class="cart_d_fgd" style="margin-right: 10px">
+						<span class="cart_d_fname fl">表佰商城</span>
+						<span class="btn_connect"></span>
+					</span>
+           			<span class="cart_d_item" style="margin-left: 25px;margin-right: 25px;">  </span>
+            		<span class="cart_d_item"> 单价 </span>
+            		<span class="cart_d_item"> 数量 </span>
+            		<span class="cart_d_item"> 小计 </span>
+        		</div>
+			</div>
+			<!-- 选择的商品列表 -->
+			<ul class="shop_select_list">
+				<li>
+					<span class="cart_d_fgd">
+                        <span class="cart_iblock">
+                            <span style="margin: 0 20px 0 28px;"></span>
+                            <a href="javascript:;" class="cart_d_gdimg cart_iblock">
+                                <img src="img/brand/P1127NBS_SG_4000_3608_95028.jpg" width="72" height="72">
+                            </a>
+                            <span class="cart_iblock">
+                                <a href="javascript:;" target="_blank" class="cart_d_gddes" title="【专享5年联保】瑞士柏高Paul Picot -YACHTMAN 冒险家系列 海上霸王 P1127NBS.SG.4000.3608 机械潜水男表">
+                                    【专享5年联保】瑞士柏高Paul Picot -YACHTMAN 冒险家系列 海上霸王 P1127NBS.SG.4000.3608 机械潜水男表
+                                </a>
+                            </span>
+                        </span>
+                    </span>
+                    <div class="good_edit">
+                    	<div>品牌：<span>瑞士</span></div>
+                    	<div>型号：<span>P1127NBS.S</span></div>
+                    </div>
+                    <span class="cart_d_item">￥<i>899</i></span>
+                    <span class="cart_d_item">1</span>
+                    <span class="cart_d_item bold"> ￥<i>899</i></span>
+				</li>
+				<li>
+					<span class="cart_d_fgd">
+                        <span class="cart_iblock">
+                            <span style="margin: 0 20px 0 28px;"></span>
+                            <a href="javascript:;" class="cart_d_gdimg cart_iblock">
+                                <img src="img/brand/P1127NBS_SG_4000_3608_95028.jpg" width="72" height="72">
+                            </a>
+                            <span class="cart_iblock">
+                                <a href="javascript:;" target="_blank" class="cart_d_gddes" title="【专享5年联保】瑞士柏高Paul Picot -YACHTMAN 冒险家系列 海上霸王 P1127NBS.SG.4000.3608 机械潜水男表">
+                                    【专享5年联保】瑞士柏高Paul Picot -YACHTMAN 冒险家系列 海上霸王 P1127NBS.SG.4000.3608 机械潜水男表
+                                </a>
+                            </span>
+                        </span>
+                    </span>
+                    <div class="good_edit">
+                    	<div>品牌：<span>瑞士</span></div>
+                    	<div>型号：<span>P1127NBS.S</span></div>
+                    </div>
+                    <span class="cart_d_item">￥<i>899</i></span>
+                    <span class="cart_d_item">1</span>
+                    <span class="cart_d_item bold"> ￥<i>899</i></span>
+				</li>
+			</ul>
+			<!-- 总价 -->
+			<!-- <div class="total_container both_hidd">
+                <div class="cart_d_licount fr">
+                    <div class="mrg">
+                        <span>商品总额：</span><span class="red">￥899</span>
+                    </div>
+                    <div class="mrg">
+                        <span>应付额：</span><span class="red" id="SPANSumAmount_1">￥899</span>
+                    </div>
+                </div>
+            </div> -->
+
+            <!-- 优惠券 -->
+            <div class="coupon">
+            	<div class="coupon_word">
+                    <span class="coupon_ctf">使用优惠券抵消部分总额</span>
+                </div>
+                <div style="margin:5px 12px 5px 20px;">
+                	<div class="fl">
+                        <span>可用优惠券:</span>
+                        <span class="redbold">0</span>
+                    </div>
+                    <div class="fl">
+                        <span class="yellow">&nbsp;&nbsp;&nbsp;&nbsp;温馨提示：</span>
+                        <span>每次订单只能使用一张优惠券，使用多张可分订单购买！</span>
+                    </div>
+                    <div class="both_hidd"></div>
+                    <div style="margin-top: 20px">
+                        <label class="fl">商品优惠券：</label>
+                        <select class="fl select_ticket" style="width: 200px;height: 25px">
+                            <option value="0">--选择优惠券--</option>
+                            <option value="1">手动填写优惠券</option>
+                        </select>
+                        &nbsp;&nbsp;
+                        <input type="text" class="coupom_inp fl" maxlength="50">
+                        <a class=" cart_d_coupon" href="javascript:;">使用优惠券</a>
+                    </div>
+                    <!--优惠券内容区域-->
+                    <div style="margin-top: 20px;"></div>
+                </div>
+            </div>
+            <!-- t添加订单备注 -->
+            <div style="background:#fff;margin-top:10px;padding:5px 0;">
+               <span class="cart_d_cft">添加订单备注:</span>
+               <br>
+               <div style="margin: 5px 12px 5px 20px;">
+                <textarea placeholder="提示：限100个字以内，填写您的要求" maxlength="100"></textarea>
+                </div>
+            </div>
+
+            <!-- 金额 -->
+            <div style="background:#fff;margin-top:10px" class="both_hidd">
+	            <div class="cart_d_cfcount fr ">
+	                <div>合计<span class="redbold" style="margin: 0 5px;">1</span>件商品</div>
+	                <div class="fr" style="max-width: 223px;">
+	                    <ul>
+	                        <li class="redbold">￥899</li>
+	                        <li class="redbold" id="LIDiscountAmount">-￥0</li>
+	                        <li class="redbold" id="LTShippingFreight">￥0</li>
+	                    </ul>
+	                </div>
+	                <div class="cart_d_label fr">
+	                    <ul>
+	                        <li>订单原价：</li>
+	                        <li>优惠金额：</li>
+	                        <li>运费总额：</li></ul>
+	                </div>
+	            </div>
+            </div>
+            <!-- 去支付 -->
+		        <div class="cart_d_fbox both_hidd">
+		            <input type="button" value="提交订单" class="cart_d_subbtn fr" href="submitIndent.html">
+		            <div class="cart_d_formall fr">
+		                <span style="margin-right: 30px;">应付总额：
+		                    <span style="color:#b01330;">￥899</span>
+		                </span>
+		            </div>
+		        </div>
+		</div>
+
+	</div>
+
+	<!--底部-->
+	<div class="login_foot pub_width">
+		<div class="supuy_info">
+			<ul>
+				<li><a href="javascript:;">常见问题</a></li>
+				<li><a href="javascript:;">支付方式</a></li>
+				<li><a href="javascript:;">配送服务</a></li>
+				<li><a href="javascript:;" style="border: none;">发票制度</a></li>
+			</ul>
+		</div>
+		<div class="login_cory">Copyright © 表佰商城 2017-2018 All Right Reseved 甘 ICP 证 00000000 号</p></div>
+		<div>
+			<a style="display: inline-block;" href="javascript:;">
+				<img src="img/styleImg/cnnic_en.png" alt="" width="137" height="47">
+			</a>
+			<span style="display: inline-block;position: relative;width: auto;">
+				<img src="img/styleImg/cert.png" alt="" width="137" height="47" style="border: none;">
+			</span>
+			
+		</div>
+	</div>	
+	
+</body>
+</html>

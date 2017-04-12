@@ -1,0 +1,121 @@
+@charset "utf-8";
+$bgColor: #b01330;
+/*侧悬浮*/
+.suspension {
+    position: fixed;
+    right: 0;
+    bottom: 60px;
+    height: 200px;
+    width: 45px;
+    font-size: 14px;
+    z-index: 10000;
+    a{
+        width: 200px;
+        display: block;
+       height: 32px;
+        position: absolute;
+        padding-left: 12px;
+        background: $bgColor;
+        margin-bottom: 2px;
+    }
+    .suspen_cart{
+        bottom: 50px;
+    }
+    .fixed{//购物车
+        width: 45px;
+        height: 32px;
+        float: left;
+        z-index: 3;
+    }
+    .cart{
+        background: url("../img/styleImg/index.png") no-repeat 0px -51px;
+    }
+    .move{
+        float: left;
+        width: 90px;
+        height: 32px;
+        line-height: 32px;
+        background: $bgColor;
+        text-align: center;
+        font-size: 18px;
+        color: #fff;
+        transition: transform .55s;
+        transform: translate3d(0, 0, 0);
+    }
+    .return{
+        background: url("../img/styleImg/index.png") no-repeat 0px -671px;
+    }
+        .suspen_cart:hover .nav_1{
+             transform: translate3d(-140px, 0, 0);
+        }
+        .suspen_retren:hover .nav_2{
+            transform: translate3d(-140px, 0, 0);
+        }
+    .suspen_retren{
+        bottom: 0;
+    }
+}
+//
+//.suspension .navr {
+//  margin-top: 22px;
+//   float: left;
+//  cursor: pointer;
+//  height: 32px;
+//  width: 34px;
+//}
+//
+//.suspension .biaobai{
+//  margin-top: 100px;
+//}
+//.biaobai {
+//  position: relative;
+//  width: 16px;
+//  height: 16px;
+//  background: url(../images/bases.png) no-repeat 6px -417px;
+//  margin-top: 200px;
+//}
+//.shoucang {
+//  position: relative;
+//  width: 25px;
+//  height: 25px;
+//  background: url(../img/styleImg/bases.png) -235px 0px;
+//}
+//.gouwuche {
+//  position: relative;
+//  width: 16px;
+//  height: 16px;
+//  background: url("../img/styleImg/index.png") no-repeat 0px -51px;
+//}
+//.fanhui {
+//  position: fixed;
+//  width: 30px;
+//  height: 19px;
+//  bottom: 50px;
+//  right: 0;
+//  background: url(../images/index.png) 0px -671px;
+//}
+//.biaobai a, .shoucang a, .gouwuche a, .fanhui a {
+//  position: absolute;
+//  top: 0;
+//  left: 34px;
+//  float: left;
+//  width: 80px;
+//  padding: 4px 0;
+//  color: #fff;
+//  background-color: #9381f4;
+//  text-align: center;
+//  border-bottom-left-radius: 10%;
+//  border-top-left-radius: 10%;
+//  transition: transform 0.5s;
+//  transform: translate3d(50%,0,0);
+//}
+// .biaobai:hover a,.shoucang:hover a,.gouwuche:hover a,.fanhui:hover a{
+//  left: -80px;
+//  transition: transform 0.5s;
+//  transform: translate3d(0,0,0);
+//  
+//}
+//.biaobai:hover, .shoucang:hover, .gouwuche:hover, .fanhui:hover{
+//  background-color: #9381f4;
+//}
+

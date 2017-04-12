@@ -1,0 +1,105 @@
+@charset "UTF-8";
+body, h1, h2, h3, h4, h5, h6, p, ul, li, input, dl, dt, dd, div, ol, form {
+  padding: 0;
+  margin: 0; }
+
+body {
+  color: #666;
+  background: #FFF;
+  font-family: "Microsoft YaHei UI", "Microsoft YaHei UI Light", "微软雅黑", "宋体", Helvetica-Black-SemiBold, Tahoma, Arial, sans-serif;
+  font-size: 12px;
+  line-height: 24px; }
+
+img {
+  border: 0; }
+
+a:hover {
+  color: #2738da; }
+
+a, li {
+  cursor: pointer;
+  list-style: none;
+  text-decoration: none; }
+
+input {
+  font-family: inherit;
+  font-size: inherit;
+  font-style: inherit;
+  font-weight: inherit; }
+
+*::after, *::before {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+.pub_width {
+  margin: 0 auto;
+  width: 1200px; }
+
+label {
+  cursor: default; }
+
+.wrap_box {
+  width: 1200px;
+  margin: 0 auto; }
+
+.fl {
+  float: left; }
+
+.fr {
+  float: right; }
+
+.both_hidd::after {
+  content: '\0020';
+  display: block;
+  clear: both;
+  height: 0; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+.code_total {
+  margin: 10px 22px 0 22px;
+  position: relative;
+  height: 42px; }
+  .code_total .input_size {
+    display: block;
+    width: 231px;
+    height: 40px;
+    border: 1px solid #FFFFFF;
+    background: #f9f9f9;
+    padding: 0 20px 0 43px;
+    line-height: 40px;
+    float: left;
+    font-size: 13px;
+    color: #666; }
+  .code_total .random_icon {
+    background: url("../img/styleImg/login_icon.png") no-repeat 14px -399px; }
+  .code_total .code_icon {
+    background: url("../img/styleImg/login_icon.png") no-repeat 14px -293px; }
+  .code_total #btn_getcode {
+    padding: 12px 22px;
+    border: none;
+    background-color: #b01330;
+    color: #ffffff;
+    cursor: pointer;
+    float: right; }
+
+.deal {
+  margin: 10px 30px 10px 30px;
+  line-height: 12px; }
+
+#btnLogin {
+  display: block;
+  width: 295px;
+  background: #b01330;
+  border: none;
+  cursor: pointer;
+  margin: 0 22px 0 22px;
+  text-align: center; }
+  #btnLogin span {
+    color: #FFF;
+    line-height: 36px;
+    font-size: 20px; }
+
+/*# sourceMappingURL=regist.css.map */

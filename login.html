@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>登录</title>
+		<link href="img/icon.ico" type="image/x-icon" rel="icon">
+		<link rel="stylesheet" href="css/login.css" />
+		<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+		<script type="text/javascript" src="js/cookie.js"></script>
+		<script type="text/javascript" src="js/login.js"></script>
+		
+		
+	</head>
+	<body>
+		
+	<!-- 登陆页面头部 -->
+		<div class="regtop">
+			<div class="pub_width" style="overflow: hidden;">
+				<div class="reglogo">
+					<a href="index.html" target="_blank">
+						<img src="img/styleImg/logo01.png" alt="" />
+					</a>
+				</div>
+				<div class="login">欢迎登录</div>
+			</div>
+		</div>
+		<!-- 登陆页面中部 -->
+		<div id="login_middle">
+			<div class="login_right pub_width both_hidd">
+				<!--  其他登录方式  -->
+				<div class="thirdland">
+					<p>其他账户登录</p>
+					<ul>
+						<li>
+							<a href="javascript:;">
+								<i></i>
+								<span>QQ</span>
+							</a>
+						</li>
+						<li>
+							<a href="javascript:;">
+								<i></i>
+								<span>新浪微博</span>
+							</a>
+						</li>
+						<li>
+							<a href="javascript:;">
+								<i></i>
+								<span>微信</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+				
+				
+				<!-- 登录  -->
+				<div class="login_login">
+					<div class="login_above">
+						<span>会员登录</span>
+						<b>没有表佰账户?<a href="regist.html">立即注册</a></b>
+					</div>
+
+				    <div id="loginForm">
+				    	<div class="login_error_section">
+				    		<div class="error_tips">
+				    			<i></i>
+				    			<span>错误</span>
+				    		</div>
+				    	</div>
+				    	<div class="login_account_total">
+				    		<div class="input_icon user_icon"></div>
+				    		<input id="userName" class="input_size" type="text" placeholder="邮箱、手机号、账户" maxlength="50"/>
+				    	</div>
+				    	<div class="login_account_total">
+				    		<div class="input_icon passw_icon"></div>
+				    		<input id="password" class="input_size" type="password" placeholder="密码" maxlength="50"/>
+				    	</div>
+				    	<div class="login_account_total sash">
+				    		<div class="Sash_box">
+				    			<div class="Slider_tip">按住滑块拖动到最后</div>
+				    			<div class="bgSlider" id="bgSlider">
+				    				<div class="Slider" id="Slider"></div>
+				    			</div>
+				    		</div>
+				    	</div>
+				    	<div class="login_checkbox_all">
+				    		<span class="fl">
+				    			<input type="checkbox" name="" id="" value="记住用户名" />记住用户名
+				    		</span>
+				    		<span class="fl" style="margin-left: 30px;">
+				    			<input type="checkbox" name="" id="" value="自动登录" checked="checked"/>自动登录
+				    		</span>
+				    		<span class="fr">
+				    			<a href="" style="color: #9F9F9F;
+font-weight: normal;">忘记密码了？</a>
+				    		</span>
+				    	</div>
+				    	<button id="btnLogin" name="btnLogin">
+				    		<span>登 录</span>
+				    	</button>
+				    </div>
+				    <div class="login_relat">
+				    	<label style="float: left;">合作账户登录：</label>
+				    	<a href="javascript:;" target="_blank">
+				    		<img src="img/styleImg/zhifubao.png" alt="" />
+				    	</a>
+				    	<a href="javascript:;" target="_blank">
+				    		<img src="img/styleImg/weibo.png" alt="" />
+				    	</a>
+				    </div>
+				</div>
+				
+			</div>
+		</div>
+	</body>
+</html>

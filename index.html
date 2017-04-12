@@ -1,0 +1,1221 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>表佰-手表商城</title>
+		<link href="img/icon.ico" type="image/x-icon" rel="icon">
+		<link rel="stylesheet" type="text/css" href="css/head.css"/>
+		<link rel="stylesheet" type="text/css" href="css/footer.css"/>
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+		<link rel="stylesheet" type="text/css" href="css/suspension.css"/>
+		<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>	
+		<script type="text/javascript" src="js/index.js"></script>
+		<script type="text/javascript" src="js/public.js"></script>
+		<script type="text/javascript">
+			$(function(){
+//				console.log()
+				//轮播图
+				var banner = new MoveImg({
+										"boxId":".banner",
+										"speed":2000
+									});
+				banner.opacityImg();
+//				男表专区轮播图
+				var MrZone = new MoveImg({
+										"boxId":".MrZone",
+										"speed":2000
+									});
+				MrZone.opacityImg();
+				//女表专区轮播图
+				var MsZone = new MoveImg({
+										"boxId":".MsZone",
+										"speed":2000
+									});
+				MsZone.opacityImg();
+				//情侣专区轮播图
+				var LovesZone = new MoveImg({
+										"boxId":".LovesZone",
+										"speed":2000
+									});
+				LovesZone.opacityImg();
+				
+			})
+		</script>
+	</head>
+	<body>
+		<!-- 头部  -->
+		<div class="head"></div>
+		<!--  通片轮播  -->
+		<div class="banner">
+			<ul class="slides" id="slides">
+	            <li style="background: rgb(15,15,15);">
+	                <a  href="list.html">
+						<img src="img/styleImg/148775219769192.jpg" alt=""/>
+					</a>
+	            </li>
+	            <li style="background: rgb(47,27,20);">
+	                <a  href="list.html">
+						<img src="img/styleImg/148783844925440.jpg" alt="" />
+					</a>
+	            </li>
+	            <li style="background: rgb(10,6,7);">
+	                <a  href="list.html">
+						<img src="img/styleImg/148824972441805.jpg" alt="" />
+					</a>
+	            </li>
+	            <li style="background: rgb(175,224,231);">
+	                <a  href="list.html">
+						<img src="img/styleImg/148842519331009.jpg" alt="" />
+					</a>
+	            </li>
+	            <li style="background: rgb(43,1,2);">
+	                <a  href="list.html">
+	                    <img src="img/styleImg/148896807011602.jpg" style="padding-left: 177px;">
+	                </a>
+	            </li>  
+	            <li style="background: rgb(8,8,12);">
+	                <a  href="list.html">
+	                    <img src="img/styleImg/148127630137165.png" style="padding-left: 177px;">
+	                </a>
+	            </li>
+			</ul>
+	        <span class="prev"></span>
+	        <span class="next"></span>
+	        <div class="circle">
+	        	<p></p>
+		        <ul>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+				</ul>
+				<p style="background-position: -261px 0;"></p>
+	        </div>
+		</div>
+		
+		<div class="box_mid">
+			<div class="pub_width">
+				<!--  第五大道线条变化  -->
+				<div class="fifthAvenue">
+					<div class="time_word">
+						<p>
+							<span>热门品牌</span>
+							<span style="margin-left: 22px;">HOST BRANS</span>
+						</p>
+						<div>
+							<a  href="list.html">
+								<span class="hot_prev" style="width:8px;height:15px;display:inline-block;background: url(img/styleImg/share02.png) no-repeat -160px -384px;margin-left: 20px;"></span
+							</a>
+							<a  href="list.html">
+								<span class="hot_next" style="width:8px;height:15px;display:inline-block;background: url(img/styleImg/share02.png) no-repeat -180px -384px; margin-left: 20px;"></span>
+							</a>
+						</div>
+					</div>
+					<div class="fifavBot">
+						<ul>
+							<li>
+								<div class="hotBrand">
+									<img src="img/brand/147219975755081.png"/>
+									<div class="exchangeImg">
+										<p>百达翡丽</p>
+										<div></div>
+									</div>
+									<div class="hotTop"></div>
+									<div class="hotBottom"></div>
+									<div class="hotLeft"></div>
+									<div class="hotRight"></div>
+								</div>
+								<div class="hotBrand">
+									<img src="img/brand/147219975755081.png"/>
+									<div class="exchangeImg">
+										<p>百达翡丽</p>
+										<div></div>
+									</div>
+									<div class="hotTop"></div>
+									<div class="hotBottom"></div>
+									<div class="hotLeft"></div>
+									<div class="hotRight"></div>
+								</div>
+								<div class="hotBrand">
+									<img src="img/brand/147219975755081.png"/>
+									<div class="exchangeImg">
+										<p>百达翡丽</p>
+										<div></div>
+									</div>
+									<div class="hotTop"></div>
+									<div class="hotBottom"></div>
+									<div class="hotLeft"></div>
+									<div class="hotRight"></div>
+								</div>
+								<div class="hotBrand">
+									<img src="img/brand/147219975755081.png"/>
+									<div class="exchangeImg">
+										<p>百达翡丽</p>
+										<div></div>
+									</div>
+									<div class="hotTop"></div>
+									<div class="hotBottom"></div>
+									<div class="hotLeft"></div>
+									<div class="hotRight"></div>
+								</div>
+								<div class="hotBrand">
+									<img src="img/brand/147219975755081.png"/>
+									<div class="exchangeImg">
+										<p>百达翡丽</p>
+										<div></div>
+									</div>
+									<div class="hotTop"></div>
+									<div class="hotBottom"></div>
+									<div class="hotLeft"></div>
+									<div class="hotRight"></div>
+								</div>
+								<div class="hotBrand">
+									<img src="img/brand/147219975755081.png"/>
+									<div class="exchangeImg">
+										<p>百达翡丽</p>
+										<div></div>
+									</div>
+									<div class="hotTop"></div>
+									<div class="hotBottom"></div>
+									<div class="hotLeft"></div>
+									<div class="hotRight"></div>
+								</div>
+								<div class="hotBrand">
+									<img src="img/brand/147219975755081.png"/>
+									<div class="exchangeImg">
+										<p>百达翡丽</p>
+										<div></div>
+									</div>
+									<div class="hotTop"></div>
+									<div class="hotBottom"></div>
+									<div class="hotLeft"></div>
+									<div class="hotRight"></div>
+								</div>
+								<div class="hotBrand">
+									<img src="img/brand/147219975755081.png"/>
+									<div class="exchangeImg">
+										<p>百达翡丽</p>
+										<div></div>
+									</div>
+									<div class="hotTop"></div>
+									<div class="hotBottom"></div>
+									<div class="hotLeft"></div>
+									<div class="hotRight"></div>
+								</div>
+								<div class="hotBrand">
+									<img src="img/brand/147219975755081.png"/>
+									<div class="exchangeImg">
+										<p>百达翡丽</p>
+										<div></div>
+									</div>
+									<div class="hotTop"></div>
+									<div class="hotBottom"></div>
+									<div class="hotLeft"></div>
+									<div class="hotRight"></div>
+								</div>
+								<div class="hotBrand">
+									<img src="img/brand/147219975755081.png"/>
+									<div class="exchangeImg">
+										<p>百达翡丽</p>
+										<div></div>
+									</div>
+									<div class="hotTop"></div>
+									<div class="hotBottom"></div>
+									<div class="hotLeft"></div>
+									<div class="hotRight"></div>
+								</div>
+								<div class="hotBrand">
+									<img src="img/brand/147219975755081.png"/>
+									<div class="exchangeImg">
+										<p>百达翡丽</p>
+										<div></div>
+									</div>
+									<div class="hotTop"></div>
+									<div class="hotBottom"></div>
+									<div class="hotLeft"></div>
+									<div class="hotRight"></div>
+								</div>
+								<div class="hotBrand">
+									<img src="img/brand/147219975755081.png"/>
+									<div class="exchangeImg">
+										<p>百达翡丽</p>
+										<div></div>
+									</div>
+									<div class="hotTop"></div>
+									<div class="hotBottom"></div>
+									<div class="hotLeft"></div>
+									<div class="hotRight"></div>
+								</div>
+								<div class="hotBrand">
+									<img src="img/brand/147219975755081.png"/>
+									<div class="exchangeImg">
+										<p>百达翡丽</p>
+										<div></div>
+									</div>
+									<div class="hotTop"></div>
+									<div class="hotBottom"></div>
+									<div class="hotLeft"></div>
+									<div class="hotRight"></div>
+								</div>
+								<div class="hotBrand">
+									<img src="img/brand/147219975755081.png"/>
+									<div class="exchangeImg">
+										<p>百达翡丽</p>
+										<div></div>
+									</div>
+									<div class="hotTop"></div>
+									<div class="hotBottom"></div>
+									<div class="hotLeft"></div>
+									<div class="hotRight"></div>
+								</div>
+							</li>
+							<li>
+								<div class="hotBrand">
+									<img src="img/brand/147219975755081.png"/>
+									<div class="exchangeImg">
+										<p>百达翡丽</p>
+										<div></div>
+									</div>
+									<div class="hotTop"></div>
+									<div class="hotBottom"></div>
+									<div class="hotLeft"></div>
+									<div class="hotRight"></div>
+								</div>
+								<div class="hotBrand">
+									<img src="img/brand/147219975755081.png"/>
+									<div class="exchangeImg">
+										<p>百达翡丽</p>
+										<div></div>
+									</div>
+									<div class="hotTop"></div>
+									<div class="hotBottom"></div>
+									<div class="hotLeft"></div>
+									<div class="hotRight"></div>
+								</div>
+								<div class="hotBrand">
+									<img src="img/brand/147219975755081.png"/>
+									<div class="exchangeImg">
+										<p>百达翡丽</p>
+										<div></div>
+									</div>
+									<div class="hotTop"></div>
+									<div class="hotBottom"></div>
+									<div class="hotLeft"></div>
+									<div class="hotRight"></div>
+								</div>
+								<div class="hotBrand">
+									<img src="img/brand/147219975755081.png"/>
+									<div class="exchangeImg">
+										<p>百达翡丽</p>
+										<div></div>
+									</div>
+									<div class="hotTop"></div>
+									<div class="hotBottom"></div>
+									<div class="hotLeft"></div>
+									<div class="hotRight"></div>
+								</div>
+								<div class="hotBrand">
+									<img src="img/brand/147219975755081.png"/>
+									<div class="exchangeImg">
+										<p>百达翡丽</p>
+										<div></div>
+									</div>
+									<div class="hotTop"></div>
+									<div class="hotBottom"></div>
+									<div class="hotLeft"></div>
+									<div class="hotRight"></div>
+								</div>
+								<div class="hotBrand">
+									<img src="img/brand/147219975755081.png"/>
+									<div class="exchangeImg">
+										<p>百达翡丽</p>
+										<div></div>
+									</div>
+									<div class="hotTop"></div>
+									<div class="hotBottom"></div>
+									<div class="hotLeft"></div>
+									<div class="hotRight"></div>
+								</div>
+								<div class="hotBrand">
+									<img src="img/brand/147219975755081.png"/>
+									<div class="exchangeImg">
+										<p>百达翡丽</p>
+										<div></div>
+									</div>
+									<div class="hotTop"></div>
+									<div class="hotBottom"></div>
+									<div class="hotLeft"></div>
+									<div class="hotRight"></div>
+								</div>
+								<div class="hotBrand">
+									<img src="img/brand/147219975755081.png"/>
+									<div class="exchangeImg">
+										<p>百达翡丽</p>
+										<div></div>
+									</div>
+									<div class="hotTop"></div>
+									<div class="hotBottom"></div>
+									<div class="hotLeft"></div>
+									<div class="hotRight"></div>
+								</div>
+								<div class="hotBrand">
+									<img src="img/brand/147219975755081.png"/>
+									<div class="exchangeImg">
+										<p>百达翡丽</p>
+										<div></div>
+									</div>
+									<div class="hotTop"></div>
+									<div class="hotBottom"></div>
+									<div class="hotLeft"></div>
+									<div class="hotRight"></div>
+								</div>
+								<div class="hotBrand">
+									<img src="img/brand/147219975755081.png"/>
+									<div class="exchangeImg">
+										<p>百达翡丽</p>
+										<div></div>
+									</div>
+									<div class="hotTop"></div>
+									<div class="hotBottom"></div>
+									<div class="hotLeft"></div>
+									<div class="hotRight"></div>
+								</div>
+								<div class="hotBrand">
+									<img src="img/brand/147219975755081.png"/>
+									<div class="exchangeImg">
+										<p>百达翡丽</p>
+										<div></div>
+									</div>
+									<div class="hotTop"></div>
+									<div class="hotBottom"></div>
+									<div class="hotLeft"></div>
+									<div class="hotRight"></div>
+								</div>
+								<div class="hotBrand">
+									<img src="img/brand/147219975755081.png"/>
+									<div class="exchangeImg">
+										<p>百达翡丽</p>
+										<div></div>
+									</div>
+									<div class="hotTop"></div>
+									<div class="hotBottom"></div>
+									<div class="hotLeft"></div>
+									<div class="hotRight"></div>
+								</div>
+								<div class="hotBrand">
+									<img src="img/brand/147219975755081.png"/>
+									<div class="exchangeImg">
+										<p>百达翡丽</p>
+										<div></div>
+									</div>
+									<div class="hotTop"></div>
+									<div class="hotBottom"></div>
+									<div class="hotLeft"></div>
+									<div class="hotRight"></div>
+								</div>
+								<div class="hotBrand">
+									<img src="img/brand/147219975755081.png"/>
+									<div class="exchangeImg">
+										<p>百达翡丽</p>
+										<div></div>
+									</div>
+									<div class="hotTop"></div>
+									<div class="hotBottom"></div>
+									<div class="hotLeft"></div>
+									<div class="hotRight"></div>
+								</div>
+							</li>
+							<li>
+								<div class="hotBrand">
+									<img src="img/brand/147219975755081.png"/>
+									<div class="exchangeImg">
+										<p>百达翡丽</p>
+										<div></div>
+									</div>
+									<div class="hotTop"></div>
+									<div class="hotBottom"></div>
+									<div class="hotLeft"></div>
+									<div class="hotRight"></div>
+								</div>
+								<div class="hotBrand">
+									<img src="img/brand/147219975755081.png"/>
+									<div class="exchangeImg">
+										<p>百达翡丽</p>
+										<div></div>
+									</div>
+									<div class="hotTop"></div>
+									<div class="hotBottom"></div>
+									<div class="hotLeft"></div>
+									<div class="hotRight"></div>
+								</div>
+								<div class="hotBrand">
+									<img src="img/brand/147219975755081.png"/>
+									<div class="exchangeImg">
+										<p>百达翡丽</p>
+										<div></div>
+									</div>
+									<div class="hotTop"></div>
+									<div class="hotBottom"></div>
+									<div class="hotLeft"></div>
+									<div class="hotRight"></div>
+								</div>
+								<div class="hotBrand">
+									<img src="img/brand/147219975755081.png"/>
+									<div class="exchangeImg">
+										<p>百达翡丽</p>
+										<div></div>
+									</div>
+									<div class="hotTop"></div>
+									<div class="hotBottom"></div>
+									<div class="hotLeft"></div>
+									<div class="hotRight"></div>
+								</div>
+								<div class="hotBrand">
+									<img src="img/brand/147219975755081.png"/>
+									<div class="exchangeImg">
+										<p>百达翡丽</p>
+										<div></div>
+									</div>
+									<div class="hotTop"></div>
+									<div class="hotBottom"></div>
+									<div class="hotLeft"></div>
+									<div class="hotRight"></div>
+								</div>
+								<div class="hotBrand">
+									<img src="img/brand/147219975755081.png"/>
+									<div class="exchangeImg">
+										<p>百达翡丽</p>
+										<div></div>
+									</div>
+									<div class="hotTop"></div>
+									<div class="hotBottom"></div>
+									<div class="hotLeft"></div>
+									<div class="hotRight"></div>
+								</div>
+								<div class="hotBrand">
+									<img src="img/brand/147219975755081.png"/>
+									<div class="exchangeImg">
+										<p>百达翡丽</p>
+										<div></div>
+									</div>
+									<div class="hotTop"></div>
+									<div class="hotBottom"></div>
+									<div class="hotLeft"></div>
+									<div class="hotRight"></div>
+								</div>
+								<div class="hotBrand">
+									<img src="img/brand/147219975755081.png"/>
+									<div class="exchangeImg">
+										<p>百达翡丽</p>
+										<div></div>
+									</div>
+									<div class="hotTop"></div>
+									<div class="hotBottom"></div>
+									<div class="hotLeft"></div>
+									<div class="hotRight"></div>
+								</div>
+								<div class="hotBrand">
+									<img src="img/brand/147219975755081.png"/>
+									<div class="exchangeImg">
+										<p>百达翡丽</p>
+										<div></div>
+									</div>
+									<div class="hotTop"></div>
+									<div class="hotBottom"></div>
+									<div class="hotLeft"></div>
+									<div class="hotRight"></div>
+								</div>
+								<div class="hotBrand">
+									<img src="img/brand/147219975755081.png"/>
+									<div class="exchangeImg">
+										<p>百达翡丽</p>
+										<div></div>
+									</div>
+									<div class="hotTop"></div>
+									<div class="hotBottom"></div>
+									<div class="hotLeft"></div>
+									<div class="hotRight"></div>
+								</div>
+								<div class="hotBrand">
+									<img src="img/brand/147219975755081.png"/>
+									<div class="exchangeImg">
+										<p>百达翡丽</p>
+										<div></div>
+									</div>
+									<div class="hotTop"></div>
+									<div class="hotBottom"></div>
+									<div class="hotLeft"></div>
+									<div class="hotRight"></div>
+								</div>
+								<div class="hotBrand">
+									<img src="img/brand/147219975755081.png"/>
+									<div class="exchangeImg">
+										<p>百达翡丽</p>
+										<div></div>
+									</div>
+									<div class="hotTop"></div>
+									<div class="hotBottom"></div>
+									<div class="hotLeft"></div>
+									<div class="hotRight"></div>
+								</div>
+								<div class="hotBrand">
+									<img src="img/brand/147219975755081.png"/>
+									<div class="exchangeImg">
+										<p>百达翡丽</p>
+										<div></div>
+									</div>
+									<div class="hotTop"></div>
+									<div class="hotBottom"></div>
+									<div class="hotLeft"></div>
+									<div class="hotRight"></div>
+								</div>
+								<div class="hotBrand">
+									<img src="img/brand/147219975755081.png"/>
+									<div class="exchangeImg">
+										<p>百达翡丽</p>
+										<div></div>
+									</div>
+									<div class="hotTop"></div>
+									<div class="hotBottom"></div>
+									<div class="hotLeft"></div>
+									<div class="hotRight"></div>
+								</div>
+							</li>
+
+						</ul>
+					</div>
+				</div>
+				
+				<!--  整点抢购  -->
+				<div class="time_box pub_width">
+					<div class="time_word">
+						<p>
+							<span>整点抢购</span>
+							<span style="margin-left: 22px;color: #999;">TIME SHOPPING</span>
+						</p>
+						<div><a>明日抢购 &gt;&gt;</a></div>
+					</div>
+					<div class="time_pg">
+						<div class="sun"><img src="img/styleImg/sun.png" alt="" height="100%"/></div>
+						<div class="timer_group">
+							<ul>
+								<li>
+									<div class="time_tip">
+										<span style="#ededed;">8:00开始</span>
+									</div>
+									<div class="clicktime"></div>
+									<div>
+										<div class="time_line"></div>
+										<div class="time_point">
+											<p class="point"></p>
+										</div>
+										<div class="time_line"></div>
+									</div>
+									<div class="clear" style="clear: both;"></div>
+									<div class="time_list time_past">8:00</div>
+									<div class="time_font"></div>
+								</li>
+								<li>
+									<div class="time_tip">
+										<span style="#ededed;">10:00开始</span>
+									</div>
+									<div class="clicktime"></div>
+									<div>
+										<div class="time_line"></div>
+										<div class="time_point">
+											<p class="point"></p>
+										</div>
+										<div class="time_line"></div>
+									</div>
+									<div class="clear" style="clear: both;"></div>
+									<div class="time_list time_past">10:00</div>
+									<div class="time_font"></div>
+								</li>
+								<li>
+									<div class="time_tip">
+										<span style="#ededed;">12:00开始</span>
+									</div>
+									<div class="clicktime"></div>
+									<div>
+										<div class="time_line"></div>
+										<div class="time_point">
+											<p class="point"></p>
+										</div>
+										<div class="time_line"></div>
+									</div>
+									<div class="clear" style="clear: both;"></div>
+									<div class="time_list time_past">12:00</div>
+									<div class="time_font"></div>
+								</li>
+								<li>
+									<div class="time_tip">
+										<span style="#ededed;">14:00开始</span>
+									</div>
+									<div class="clicktime"></div>
+									<div>
+										<div class="time_line"></div>
+										<div class="time_point">
+											<p class="point"></p>
+										</div>
+										<div class="time_line"></div>
+									</div>
+									<div class="clear" style="clear: both;"></div>
+									<div class="time_list time_past">14:00</div>
+									<div class="time_font"></div>
+								</li>
+								<li>
+									<div class="time_tip">
+										<span style="#ededed;">16:00开始</span>
+									</div>
+									<div class="clicktime"></div>
+									<div>
+										<div class="time_line"></div>
+										<div class="time_point">
+											<p class="point"></p>
+										</div>
+										<div class="time_line"></div>
+									</div>
+									<div class="clear" style="clear: both;"></div>
+									<div class="time_list time_past">16:00</div>
+									<div class="time_font"></div>
+								</li>
+								<li>
+									<div class="time_tip">
+										<span style="#ededed;">18:00开始</span>
+									</div>
+									<div class="clicktime"></div>
+									<div>
+										<div class="time_line"></div>
+										<div class="time_point">
+											<p class="point"></p>
+										</div>
+										<div class="time_line"></div>
+									</div>
+									<div class="clear" style="clear: both;"></div>
+									<div class="time_list time_past">18:00</div>
+									<div class="time_font"></div>
+								</li>
+								<li>
+									<div class="time_tip">
+										<span style="#ededed;">20:00开始</span>
+									</div>
+									<div class="clicktime"></div>
+									<div>
+										<div class="time_line"></div>
+										<div class="time_point">
+											<p class="point"></p>
+										</div>
+										<div class="time_line"></div>
+									</div>
+									<div class="clear" style="clear: both;"></div>
+									<div class="time_list time_past">20:00</div>
+									<div class="time_font"></div>
+								</li>
+								<li>
+									<div class="time_tip">
+										<span style="#ededed;">22:00开始</span>
+									</div>
+									<div class="clicktime"></div>
+									<div>
+										<div class="time_line"></div>
+										<div class="time_point">
+											<p class="point"></p>
+										</div>
+										<div class="time_line"></div>
+									</div>
+									<div class="clear" style="clear: both;"></div>
+									<div class="time_list time_past">22:00</div>
+									<div class="time_font"></div>
+								</li>
+							</ul>
+						</div>
+						<div class="sun" style="right: 0;"><img src="img/styleImg/moon.png" alt="" height="100%"/></div>
+					</div>
+					<!--  限时抢购物品  -->
+					<div class="time_page">
+						<div class="time_page_left"></div>
+						<div class="page_mid">
+							<ul>
+								<li>
+									<div class="impag">
+										<a  href="list.html"><img src="img/SetTimeFrame/xsqg001.jpg" alt="" /></a>
+										<div class="list_round">
+											<a  href="list.html" class="list_round_asle"></a>
+											<a  href="list.html" class="list_round_btn">立即抢购</a>
+										</div>
+									</div>
+									<div class="wod">
+										<div style="height: 28px;padding-left: 3px;">
+											<a  href="list.html" target="_blank">欧米茄蝶飞</a>
+											<a  href="list.html" target="_blank">431.33.41.21.03.001</a>
+										</div>
+										<div>
+											<p style="" class="bold">￥4.9</p>
+											<p style="color: #a2a2a2;font-size: 12px;text-decoration: line-through;">￥53200</p>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="impag">
+										<a  href="list.html" style="opacity: 0.5;"><img src="img/SetTimeFrame/xsqg002.jpg" alt="" /></a>
+										<div class="list_empt"></div>
+									</div>
+									<div class="wod">
+										<div style="height: 28px;padding-left: 3px;">
+											<a  href="list.html" target="_blank">劳士顿海使型</a>
+											<a  href="list.html" target="_blank">116660-98210黑盘</a>
+										</div>
+										<div>
+											<p style="" class="bold">￥9.9</p>
+											<p style="color: #a2a2a2;font-size: 12px;text-decoration: line-through;">￥87500</p>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="impag">
+										<a  href="list.html"><img src="img/SetTimeFrame/xsqg003.jpg" alt="" /></a>
+										<div class="list_round">
+											<a  href="list.html" class="list_round_asle"></a>
+											<a  href="list.html" class="list_round_btn">立即抢购</a>
+									</div>
+									</div>
+									<div class="wod">
+										<div style="height: 28px;padding-left: 3px;">
+											<a  href="list.html" target="_blank">卡地亚蓝气球</a>
+											<a  href="list.html" target="_blank">WSBB0002</a>
+										</div>
+										<div>
+											<p style="" class="bold">￥9.9</p>
+											<p style="color: #a2a2a2;font-size: 12px;text-decoration: line-through;">￥41500</p>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="impag">
+										<a  href="list.html"><img src="img/SetTimeFrame/xsqg004.jpg" alt="" /></a>
+										<div class="list_round">
+											<a  href="list.html" class="list_round_asle"></a>
+											<a  href="list.html" class="list_round_btn">立即抢购</a>
+										</div>
+									</div>
+									<div class="wod">
+										<div style="height: 28px;padding-left: 3px;">
+											<a  href="list.html" target="_blank"">积家约会</a>
+											<a  href="list.html" target="_blank">Q3448420</a>
+										</div>
+										<div>
+											<p style="" class="bold">￥9.9</p>
+											<p style="color: #a2a2a2;font-size: 12px;text-decoration: line-through;">￥99500</p>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="impag">
+										<a  href="list.html"><img src="img/SetTimeFrame/xsqg005.jpg" alt="" /></a>
+										<div class="list_round">
+											<a  href="list.html" class="list_round_asle"></a>
+											<a  href="list.html" class="list_round_btn">立即抢购</a>
+										</div>
+									</div>
+									<div class="wod">
+										<div style="height: 28px;padding-left: 3px;">
+											<a  href="list.html" target="_blank">万国葡萄牙</a>
+											<a  href="list.html" target="_blank">IW500107</a>
+										</div>
+										<div>
+											<p style="" class="bold">￥9.9</p>
+											<p style="color: #a2a2a2;font-size: 12px;text-decoration: line-through;">￥98000</p>
+										</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+						<div class="time_page_right"></div>
+					</div>
+				</div>
+				
+				<!-- 男士专区  -->
+				<div class="MrZone">
+					<div class="time_word">
+						<p>
+							<span>男表专区</span>
+							<span style="color: #999;font-size: 24px;margin-left: 22px;">Mr ZONE</span>
+						</p>
+						<div><a>更多 &gt;&gt;</a></div>
+					</div>
+					<div class="zoonBtTop both_hidd">
+						<div class="zoonBtLeft fl">
+							<ul class="slides" id="slides">
+					            <li>
+					                <a  href="list.html">
+										<img src="img/styleImg/nanshi001.jpg" alt=""/>
+									</a>
+					            </li>
+					            <li>
+					                <a  href="list.html">
+										<img src="img/styleImg/nanshi002.jpg" alt="" />
+									</a>
+					            </li>
+					            <li>
+					                <a  href="list.html">
+										<img src="img/styleImg/nanshi003.jpg" alt="" />
+									</a>
+					            </li>
+					            <li>
+					                <a  href="list.html">
+										<img src="img/styleImg/nanshi004.jpg" alt="" />
+									</a>
+					            </li>
+					            <li>
+					                <a  href="list.html">
+					                    <img src="img/styleImg/nanshi005.jpg">
+					                </a>
+					            </li>        
+							</ul>
+					        <span class="prev" style="margin-left: -200px;"></span>
+	        				<span class="next" style="margin-right: -200px;"></span>
+						</div>
+						<div class="zoonBtRight fr">
+							<div class="zoonBigImg">
+								<a  href="list.html" target="_blank">
+									<p class="p1">
+										<img src="img/SetTimeFrame/424_10_37_20_01_001_29094.jpg" alt="欧米茄(Omega) 碟飞系列">
+									</p>
+									<p class="p2">欧米茄(Omega) 碟飞系列</p>
+									<p class="p3">满10000减300</p></a>
+							</div>
+							<div class="zoonRightUl fr">
+								<a target="_blank"  href="list.html">
+									<img class="lazy" src="img/SetTimeFrame/148851059100793.jpg" style="bottom: -15px;">
+									<div class="ptxt">
+										<p class="p2">瑞士库尔沃</p>
+										<p class="p3">魅惑钻石火焰纹款</p>
+									</div>
+								</a>
+								<a target="_blank"  href="list.html">
+									<img class="lazy" src="img/brand/148887872214883.jpg" style="bottom: -15px;">
+									<div class="ptxt">
+										<p class="p2">天梭</p>
+										<p class="p3">细节成就经典</p>
+									</div>
+								</a>
+								<a target="_blank"  href="list.html">
+									<img class="lazy" src="img/brand/148755844024099.jpg" style="bottom: -15px;">
+									<div class="ptxt">
+										<p class="p2">瑞士库尔沃</p>
+										<p class="p3">魅惑钻石火焰纹款</p>
+									</div>
+								</a>
+								<a target="_blank"  href="list.html">
+									<img class="lazy" src="img/brand/148911569255768.jpg" style="bottom: -15px;">
+									<div class="ptxt">
+										<p class="p2">瑞士艾美达</p>
+										<p class="p3">限量版机芯</p>
+									</div>
+								</a>
+							</div>
+							
+						</div>
+					</div>
+					<div class="zoonBtRoot">
+						<ul>
+							<li>
+								<a  href="list.html">
+									<img src="img/brand/mido.png" alt="" />
+									<i>美度</i>
+								</a>
+							</li>
+							<li>
+								<a  href="list.html">
+									<img src="img/brand/amn.png" alt="" />
+									<i>阿玛尼</i>
+								</a>
+							</li>
+							<li>
+								<a  href="list.html">
+									<img src="img/brand/fiyta.png" alt="" />
+									<i>飞亚达</i>
+								</a>
+							</li>
+							<li>
+								<a  href="list.html">
+									<img src="img/brand/147269605562570.png" alt="" />
+									<i>库尔沃</i>
+								</a>
+							</li>
+							<li>
+								<a  href="list.html">
+									<img src="img/brand/147220075859718.png" alt="" />
+									<i>迪沃斯</i>
+								</a>
+							</li>
+							<li>
+								<a  href="list.html">
+									<img src="img/brand/147675645393611.png" alt="" />
+									<i>诺美纳</i>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				
+				<!-- 女士专区  -->
+				<div class="MsZone">
+					<div class="time_word">
+						<p>
+							<span>女表专区</span>
+							<span style="color: #999;font-size: 24px;margin-left: 22px;">Ms ZONE</span>
+						</p>
+						<div><a>更多 &gt;&gt;</a></div>
+					</div>
+					<div class="zoonBtTop both_hidd">
+						<div class="zoonBtLeft fl">
+							<ul class="slides" id="slides">
+					            <li>
+					                <a  href="list.html">
+										<img src="img/brand/147798436234705.jpg" alt=""/>
+									</a>
+					            </li>
+					            <li>
+					                <a  href="list.html">
+										<img src="img/brand/146882238368339.jpg" alt="" />
+									</a>
+					            </li>
+					            <li>
+					                <a  href="list.html">
+										<img src="img/brand/u=544037466,3800480491&fm=23&gp=0.jpg" alt="" />
+									</a>
+					            </li>
+					            <li>
+					                <a  href="list.html">
+										<img src="img/brand/u=2345750709,2724113711&fm=23&gp=0.jpg" alt="" />
+									</a>
+					            </li>
+					            <li>
+					                <a  href="list.html">
+					                    <img src="img/brand/u=1023010366,348784332&fm=23&gp=0.jpg">
+					                </a>
+					            </li>        
+							</ul>
+					        <span class="prev" style="margin-left: -200px;"></span>
+	        				<span class="next" style="margin-right: -200px;"></span>
+						</div>
+						<div class="zoonBtRight fr">
+							<div class="zoonBigImg">
+								<a  href="list.html" target="_blank">
+									<p class="p1">
+										<img src="img/styleImg/148663507110501.jpg" alt="菲拉格慕">
+									</p>
+									<p class="p2">菲拉格慕</p>
+									<p class="p3">专利制动，宛如爱的心跳</p></a>
+							</div>
+							<div class="zoonRightUl fr">
+								<a target="_blank"  href="list.html">
+									<img class="lazy" src="img/brand/148723052797702.jpg" style="bottom: -15px;">
+									<div class="ptxt">
+										<p class="p2">法国镯式简约</p>
+										<p class="p3">蓝宝石水晶玻璃款</p>
+									</div>
+								</a>
+								<a target="_blank"  href="list.html">
+									<img class="lazy" src="img/SetTimeFrame/148774187328314.jpg" style="bottom: -15px;">
+									<div class="ptxt">
+										<p class="p2">飞亚达Fiyta</p>
+										<p class="p3">《美女与野兽》特别款</p>
+									</div>
+								</a>
+								<a target="_blank"  href="list.html">
+									<img class="lazy" src="img/SetTimeFrame/13836_83881.jpg" style="bottom: -15px;">
+									<div class="ptxt">
+										<p class="p2">美度（MIDO）</p>
+										<p class="p3">都瑞DORADA系列</p>
+									</div>
+								</a>
+								<a target="_blank"  href="list.html">
+									<img class="lazy" src="img/SetTimeFrame/BD001-SL500-01QN_70007.jpg" style="bottom: -15px;">
+									<div class="ptxt">
+										<p class="p2">优立时（unizeit）</p>
+										<p class="p3">歌德系列</p>
+									</div>
+								</a>
+							</div>
+							
+						</div>
+					</div>
+					<div class="zoonBtRoot">
+						<ul>
+							<li>
+								<a  href="list.html">
+									<img src="img/brand/148939136549551.png" alt="" />
+									<i>华为</i>
+								</a>
+							</li>
+							<li>
+								<a  href="list.html">
+									<img src="img/brand/147220173978113.png" alt="" />
+									<i>雅克利曼</i>
+								</a>
+							</li>
+							<li>
+								<a  href="list.html">
+									<img src="img/brand/147220075787554.png" alt="" />
+									<i>爱宝时</i>
+								</a>
+							</li>
+							<li>
+								<a  href="list.html">
+									<img src="img/brand/148162800571843.png" alt="" />
+									<i>表带</i>
+								</a>
+							</li>
+							<li>
+								<a  href="list.html">
+									<img src="img/brand/147269605573242.png" alt="" />
+									<i>艾美达</i>
+								</a>
+							</li>
+							<li>
+								<a  href="list.html">
+									<img src="img/brand/147220173935307.png" alt="" />
+									<i>卡西欧</i>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				
+				<!--  情侣专区   -->
+				<div class="LovesZone">
+					<div class="time_word">
+						<p>
+							<span>情侣专区</span>
+							<span style="color: #999;font-size: 24px;margin-left: 22px;">LOVES ZONE</span>
+						</p>
+						<div><a>更多 &gt;&gt;</a></div>
+					</div>
+					<div class="zoonBtTop both_hidd">
+						<div class="zoonBtLeft fl">
+							<ul class="slides" id="slides">
+					            <li>
+					                <a  href="list.html">
+										<img src="img/brand/u=3213254178,3876212177&fm=23&gp=0.jpg" alt=""/>
+									</a>
+					            </li>
+					            <li>
+					                <a  href="list.html">
+										<img src="img/brand/u=2228976915,4011100960&fm=23&gp=0.jpg" alt="" />
+									</a>
+					            </li>
+					            <li>
+					                <a  href="list.html">
+										<img src="img/brand/u=2584261743,1347076002&fm=23&gp=0.jpg" alt="" />
+									</a>
+					            </li>
+					            <li>
+					                <a  href="list.html">
+										<img src="img/brand/u=891381912,2664583211&fm=23&gp=0.jpg" alt="" />
+									</a>
+					            </li>
+					            <li>
+					                <a  href="list.html">
+					                    <img src="img/brand/u=3805894509,3507326145&fm=23&gp=0.jpg">
+					                </a>
+					            </li>        
+							</ul>
+					        <span class="prev" style="margin-left: -200px;"></span>
+	        				<span class="next" style="margin-right: -200px;"></span>
+						</div>
+						<div class="zoonBtRight fr">
+							<div class="zoonBigImg">
+								<a  href="list.html" target="_blank">
+									<p class="p1">
+										<img src="img/SetTimeFrame/424_10_37_20_01_001_29094.jpg" alt="欧米茄(Omega) 碟飞系列">
+									</p>
+									<p class="p2">欧米茄(Omega) 碟飞系列</p>
+									<p class="p3">满10000减300</p></a>
+							</div>
+							<div class="zoonRightUl fr">
+								<a target="_blank"  href="list.html">
+									<img class="lazy" src="img/brand/u=1714660463,1911261868&fm=23&gp=0.jpg" style="bottom: -15px;">
+									<div class="ptxt">
+										<p class="p2">浪琴</p>
+										<p class="p3">军旗系列</p>
+									</div>
+								</a>
+								<a target="_blank"  href="list.html">
+									<img class="lazy" src="img/brand/u=2983076464,4134256427&fm=23&gp=0.jpg" style="bottom: -15px;">
+									<div class="ptxt">
+										<p class="p2">百达翡丽</p>
+										<p class="p3">Patek Philippe</p>
+									</div>
+								</a>
+								<a target="_blank"  href="list.html">
+									<img class="lazy" src="img/brand/u=2905214642,3767065648&fm=23&gp=0.jpg" style="bottom: -15px;">
+									<div class="ptxt">
+										<p class="p2">劳力士</p>
+										<p class="p3">蚝式恒动系列</p>
+									</div>
+								</a>
+								<a target="_blank"  href="list.html">
+									<img class="lazy" src="img/brand/u=1101432664,4235537584&fm=23&gp=0.jpg" style="bottom: -15px;">
+									<div class="ptxt">
+										<p class="p2">卡西欧</p>
+										<p class="p3">休闲对表</p>
+									</div>
+								</a>
+							</div>
+							
+						</div>
+					</div>
+					<div class="zoonBtRoot">
+						<ul>
+							<li>
+								<a  href="list.html">
+									<img src="img/brand/147219975792709.png" alt="" />
+									<i>宝玑</i>
+								</a>
+							</li>
+							<li>
+								<a  href="list.html">
+									<img src="img/brand/147219975729781.png" alt="" />
+									<i>江诗丹顿</i>
+								</a>
+							</li>
+							<li>
+								<a  href="list.html">
+									<img src="img/brand/147269605418316.png" alt="" />
+									<i>亨利·慕时</i>
+								</a>
+							</li>
+							<li>
+								<a  href="list.html">
+									<img src="img/brand/147220173935934.png" alt="" />
+									<i>CK</i>
+								</a>
+							</li>
+							<li>
+								<a  href="list.html">
+									<img src="img/brand/147675888184098.png" alt="" />
+									<i>爱罗</i>
+								</a>
+							</li>
+							<li>
+								<a  href="list.html">
+									<img src="img/brand/147220075884476.png" alt="" />
+									<i>康斯登</i>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<!--  底部  -->
+		<div class="footer"></div>
+		<!--侧边栏-->
+		<div class="side"></div>
+	</body>
+</html>
